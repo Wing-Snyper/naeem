@@ -14,7 +14,7 @@ jobs:
         with:
           dotnet-version: 7.0.x
       - run: dotnet build --configuration Release
-      - run: dotnet publish naeem.csproj -c Release -o release –nologo
+      - run: dotnet publish naeem.csproj -c Release -o release
       - run: sed -i ‘s/<base href=”\/” \/>/<base href=”\/naeem\/” \/>/g’ release/wwwroot/index.html
       - run: cp release/wwwroot/index.html release/wwwroot/404.html
       - run: touch release/wwwroot/.nojekyll
