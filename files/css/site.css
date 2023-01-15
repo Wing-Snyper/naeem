@@ -22,7 +22,7 @@
 
 .terminal-cursor {
     width: .4rem;
-    height: 1.25rem;    
+    height: 1.1rem;    
     justify-self: start;
     background: #4AF626;    
     box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 5%);
@@ -76,4 +76,71 @@
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-    }
+}
+
+.terminal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titlebar
+{
+    width:100%;
+    padding: .2rem .1rem .1rem;
+    box-sizing: border-box;
+    height: 2rem;
+    background-color: hsla(0, 0%, 95.3%, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    margin: 0 auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.terminal-area
+{
+    width:100%;
+    padding: .2rem .1rem .1rem;
+    /* height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.terminal-area p
+{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.ui-btn {
+	margin: 0;
+	width: 3rem;
+	/* height:2rem; */
+	border: 0;
+	outline: 0;
+	background: transparent;
+    border-top-right-radius: 5px;
+}
+.ui-btn:hover {
+	background: rgba(255,255,255,.1);
+}
+.ui-btn.close:hover {
+	background: #e81123;
+}
+.ui-btn svg path, 
+.ui-btn svg rect, 
+.ui-btn svg polygon {
+	fill: rgb(0, 0, 0);
+}
+.ui-btn svg {
+  width: 10px;
+  height: 10px;
+}
+
+.button-group
+{
+    float:right;
+}
