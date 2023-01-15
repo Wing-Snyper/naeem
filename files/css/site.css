@@ -78,6 +78,14 @@
   -moz-text-fill-color: transparent;
 }
 
+.visit-blog-text
+{
+    background: rgb(0,118,221);
+    background: linear-gradient(113deg, rgb(196, 211, 30) 0%, rgb(228, 113, 136) 59%, rgb(255, 255, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .terminal{
     display: flex;
     justify-content: center;
