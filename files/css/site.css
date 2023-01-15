@@ -144,3 +144,22 @@
 {
     float:right;
 }
+
+.titlebar-brandname
+{
+    display: inline-block;
+}
+
+.titlebar-pagename
+{
+    display: inline-block;
+}
+
+@media (max-width: 390px) {
+    .titlebar-pagename{
+      display: none;
+    }
+    /* .titlebar-brandname {
+        display: none;
+    } */
+  }
